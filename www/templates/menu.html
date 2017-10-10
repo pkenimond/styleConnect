@@ -1,0 +1,47 @@
+
+<ion-side-menus enable-menu-with-back-views="true">
+  
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stylistApp">
+
+      <ion-nav-buttons side="left" >
+        <button class="white-color button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    
+    <ion-nav-view name="menuContent" class="slide-left-right"></ion-nav-view>
+  
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+
+    <ion-header-bar class="bar-stylistApp-reverse bar-stylistApp-borderbottom">
+    </ion-header-bar>
+  
+    <ion-content>
+      <ion-list>
+
+        <ion-item ng-show="user.avatar" menu-close href="#/app/account" class="item-menu-avatar text-center">
+          <img ng-src="{{user.avatar}}" class="avatar-menu">
+        </ion-item>
+        <ion-item menu-close class="menu-positive text-center" href="#/app/account">
+          <b>{{ user.email }}</b>
+        </ion-item>
+        <ion-item menu-close href="#/app/feed">
+          Feed
+        </ion-item>
+        <ion-item menu-close href="#/app/main">
+          Main
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+    
+
+    <ion-footer-bar class="bar-positive">
+      <button class="button button-clear white-color" ng-click="logout()" menu-close>Logout</button>
+    </ion-footer-bar>
+  
+  </ion-side-menu>
+</ion-side-menus>
