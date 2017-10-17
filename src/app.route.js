@@ -1,12 +1,14 @@
 angular
 .module('app')
-.config(['$routeProvider', routeConfig]);
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', routeConfig]);
 
-function routeConfig($routeProvider) {
-    $routeProvider
-        .when('/feed', {
-            templateUrl: 'src/main/feed/feed.view.html',
-            controller: 'FeedController',
-            controllerAs: 'vm'
-        }).otherwise('/feed');
+function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+    $stateProvider
+        .state('home', {
+            url: '/home',
+            templateUrl: 'src/main/home/home.view.html',
+            controller: HomeController
+    });
+
+    $urlRouterProvider.otherwise('/home');
 }

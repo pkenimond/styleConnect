@@ -1,1 +1,1 @@
-angular.module('app', ['ngRoute', 'main', 'main.feed']);
+angular.module('app', ['ui.router', 'main', 'main.home']);

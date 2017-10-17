@@ -1,0 +1,23 @@
+{
+  "name": "styleconnect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkenimond/styleConnect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkenimond/styleConnect/issues"
+  },
+  "homepage": "https://github.com/pkenimond/styleConnect#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^0.4.3"
+  }
+}
