@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "title": "Sample Feed",
+    "date": "10/3/2017",
+    "image": "testData/images/1.jpg",
+    "description": "I got a new job at HaircutsAnonymous.  I have to wear a mask when I trim so nobody will know who I am.  Good thing I have this app!  Come see me some time!"
+}, {
+    "id": 2,
+    "title": "Feed Sample",
+    "date": "10/3/2017",
+    "image": "sampledata/images/2.jpg",
+    "description": "Today was try a new thing day so I got a haircut.  I usually get them all cut at once."
+}, {
+    "id": 3,
+    "title": "Feed me!",
+    "date": "10/3/2015",
+    "image": "sampledata/images/3.jpg",
+    "description": "My stylist moved out of state... Can someone recommend a new one?"
+}]
